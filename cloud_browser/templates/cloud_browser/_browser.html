@@ -82,7 +82,7 @@
       <td colspan="6">
         {% if marker_part %}
         <form id="cloud-browser-next" class="cloud-browser-form"
-          action="{% url cloud_browser_browser path|urlencode %}" method="post">
+          action="{% url "cloud_browser_browser" path|urlencode %}" method="post">
           {% csrf_token %}
           Next
           <input name="limit" type="text" size="5"
